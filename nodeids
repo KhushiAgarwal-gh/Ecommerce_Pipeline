@@ -1,0 +1,10 @@
+[
+  "tests/test_cleaning.py::test_clean_customers",
+  "tests/test_cleaning.py::test_clean_order_items_calculation",
+  "tests/test_cleaning.py::test_clean_products_margin_anomaly",
+  "tests/test_pipeline_integration.py::test_full_pipeline_lifecycle",
+  "tests/test_scd2.py::test_scd2_address_update_and_pit_lookup",
+  "tests/test_scd2.py::test_scd2_initial_insert",
+  "tests/test_transform.py::test_date_dimension_generation",
+  "tests/test_transform.py::test_product_dimension_margins"
+]

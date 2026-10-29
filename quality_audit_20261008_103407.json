@@ -1,0 +1,149 @@
+{
+  "timestamp": "2026-10-08T10:34:07.130985",
+  "total_checks": 20,
+  "passed_checks": 20,
+  "failed_checks": 0,
+  "overall_status": "PASSED",
+  "checks": [
+    {
+      "check_name": "volume_check_dim_date",
+      "passed": true,
+      "status": "PASSED",
+      "details": "Table dim_date has 1096 rows.",
+      "severity": "ERROR"
+    },
+    {
+      "check_name": "volume_check_dim_customer",
+      "passed": true,
+      "status": "PASSED",
+      "details": "Table dim_customer has 650 rows.",
+      "severity": "ERROR"
+    },
+    {
+      "check_name": "volume_check_dim_product",
+      "passed": true,
+      "status": "PASSED",
+      "details": "Table dim_product has 40 rows.",
+      "severity": "ERROR"
+    },
+    {
+      "check_name": "volume_check_dim_payment_method",
+      "passed": true,
+      "status": "PASSED",
+      "details": "Table dim_payment_method has 5 rows.",
+      "severity": "ERROR"
+    },
+    {
+      "check_name": "volume_check_dim_order_status",
+      "passed": true,
+      "status": "PASSED",
+      "details": "Table dim_order_status has 6 rows.",
+      "severity": "ERROR"
+    },
+    {
+      "check_name": "volume_check_fact_sales",
+      "passed": true,
+      "status": "PASSED",
+      "details": "Table fact_sales has 4652 rows.",
+      "severity": "ERROR"
+    },
+    {
+      "check_name": "volume_check_fact_returns",
+      "passed": true,
+      "status": "PASSED",
+      "details": "Table fact_returns has 99 rows.",
+      "severity": "ERROR"
+    },
+    {
+      "check_name": "fact_sales_not_null_dim_customer_key",
+      "passed": true,
+      "status": "PASSED",
+      "details": "Found 0 NULL foreign keys in fact_sales.dim_customer_key.",
+      "severity": "ERROR"
+    },
+    {
+      "check_name": "fact_sales_not_null_dim_product_key",
+      "passed": true,
+      "status": "PASSED",
+      "details": "Found 0 NULL foreign keys in fact_sales.dim_product_key.",
+      "severity": "ERROR"
+    },
+    {
+      "check_name": "fact_sales_not_null_dim_order_date_key",
+      "passed": true,
+      "status": "PASSED",
+      "details": "Found 0 NULL foreign keys in fact_sales.dim_order_date_key.",
+      "severity": "ERROR"
+    },
+    {
+      "check_name": "fact_sales_not_null_dim_payment_key",
+      "passed": true,
+      "status": "PASSED",
+      "details": "Found 0 NULL foreign keys in fact_sales.dim_payment_key.",
+      "severity": "ERROR"
+    },
+    {
+      "check_name": "fact_sales_not_null_dim_status_key",
+      "passed": true,
+      "status": "PASSED",
+      "details": "Found 0 NULL foreign keys in fact_sales.dim_status_key.",
+      "severity": "ERROR"
+    },
+    {
+      "check_name": "referential_integrity_dim_customer_key_to_dim_customer",
+      "passed": true,
+      "status": "PASSED",
+      "details": "Found 0 orphaned records linking fact_sales.dim_customer_key -> dim_customer.",
+      "severity": "ERROR"
+    },
+    {
+      "check_name": "referential_integrity_dim_product_key_to_dim_product",
+      "passed": true,
+      "status": "PASSED",
+      "details": "Found 0 orphaned records linking fact_sales.dim_product_key -> dim_product.",
+      "severity": "ERROR"
+    },
+    {
+      "check_name": "referential_integrity_dim_order_date_key_to_dim_date",
+      "passed": true,
+      "status": "PASSED",
+      "details": "Found 0 orphaned records linking fact_sales.dim_order_date_key -> dim_date.",
+      "severity": "ERROR"
+    },
+    {
+      "check_name": "referential_integrity_dim_payment_key_to_dim_payment_method",
+      "passed": true,
+      "status": "PASSED",
+      "details": "Found 0 orphaned records linking fact_sales.dim_payment_key -> dim_payment_method.",
+      "severity": "ERROR"
+    },
+    {
+      "check_name": "referential_integrity_dim_status_key_to_dim_order_status",
+      "passed": true,
+      "status": "PASSED",
+      "details": "Found 0 orphaned records linking fact_sales.dim_status_key -> dim_order_status.",
+      "severity": "ERROR"
+    },
+    {
+      "check_name": "scd2_single_active_version_check",
+      "passed": true,
+      "status": "PASSED",
+      "details": "Found 0 customers with multiple active SCD2 versions.",
+      "severity": "ERROR"
+    },
+    {
+      "check_name": "financial_reconciliation_net_revenue",
+      "passed": true,
+      "status": "PASSED",
+      "details": "Found 0 records with net_revenue formula mismatches.",
+      "severity": "ERROR"
+    },
+    {
+      "check_name": "fact_sales_order_item_uniqueness",
+      "passed": true,
+      "status": "PASSED",
+      "details": "Found 0 duplicate order_item_id entries in fact_sales.",
+      "severity": "ERROR"
+    }
+  ]
+}
