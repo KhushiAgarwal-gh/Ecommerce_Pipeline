@@ -1,0 +1,15 @@
+# Core ETL & Data Engineering
+pandas>=2.0.0
+numpy>=1.24.0
+SQLAlchemy>=2.0.0
+psycopg2-binary>=2.9.0
+python-dotenv>=1.0.0
+
+# Synthetic Data Generation
+faker>=24.0.0
+
+# Testing & Quality
+pytest>=8.0.0
+
+# Orchestration (Optional for local Windows execution; airflow-runner provides lightweight native execution)
+# apache-airflow>=2.8.0 ; sys_platform != 'win32'
